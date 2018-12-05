@@ -1,0 +1,235 @@
+<html>
+  <head>
+    <title>Write complete sentences to describe objects</title>
+    <!-- simpleamt depends on these libraries -->
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/json3/3.3.2/json3.min.js'></script>    
+    <!-- end of required libraries -->
+    <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js'></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      #text-area {
+        margin: 10px 0;
+        font-size: 24pt;
+      }
+      #button-div {
+        margin-bottom: 10px;
+      }
+      #counter {
+        margin: 0 10px;
+        font-size: 20pt;
+        font-weight: bold;
+      }
+      .panel-heading {
+        display: block;
+      }
+
+      #instructionBody.hidden {
+        display: none;
+      }
+
+      img {
+        height: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='container'>
+      <h2>Write a complete sentence to describe each object</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="panel panel-primary"><!-- WARNING: the ids "collapseTrigger" and "instructionBody" are being used to enable expand/collapse feature --><a class="panel-heading" href="javascript:void(0);" id="collapseTrigger"><strong>Object Description Instructions</strong> </a>
+          <div class="panel-body" id="instructionBody">
+            <p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">You will see 5 images of rotating objects&nbsp;that allow you to see the objects in different views. Please describe the given objects and note that the descriptions must match these criteria:</span></span></p>
+
+            <ol dir="ltr">
+              <li style="list-style-type: decimal; font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span><span style="font-size: 11pt; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Each description should only have one sentence</span></span></li>
+              <li style="list-style-type: decimal; font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="color: rgb(0, 0, 0); font-family: Arial; font-size: 14.6667px; white-space: pre-wrap;">Each</span><span><span style="font-size: 11pt; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"> description should be written correctly in English</span></span></li>
+              <li style="list-style-type: decimal; font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="color: rgb(0, 0, 0); font-family: Arial; font-size: 14.6667px; white-space: pre-wrap;">Each</span><span><span style="font-size: 11pt; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"> description should be more than 5 words</span></span></li>
+              <li style="list-style-type: decimal; font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="color: rgb(0, 0, 0); font-family: Arial; font-size: 14.6667px; white-space: pre-wrap;">Each</span><span><span style="font-size: 11pt; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"> description should exclude figures of speech like metaphor</span></span></li>
+              <li style="list-style-type: decimal; font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="color: rgb(0, 0, 0); font-family: Arial; font-size: 14.6667px; white-space: pre-wrap;">Each</span><span><span style="font-size: 11pt; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"> description should exclude the purposes of the objects</span></span></li>
+              <li style="list-style-type: decimal; font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="color: rgb(0, 0, 0); font-family: Arial; font-size: 14.6667px; white-space: pre-wrap;">Each</span><span style="white-space: pre-wrap;"> description should exclude motions, e.g. &quot;<em>rotating</em>&quot; or &quot;<em>moving</em>&quot;</span></li>
+              <li style="list-style-type: decimal; font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="color: rgb(0, 0, 0); font-family: Arial; font-size: 14.6667px; white-space: pre-wrap;">Each</span><span style="white-space: pre-wrap;"> description should avoid abbreviations</span></li>
+            </ol>
+            &nbsp;
+
+            <p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Examples of good descriptions are: &quot;<em>a white cup with black vertical stripes down the sides, and a short round base</em>&quot;, or &quot;<em>an old-fashioned, yellow motorcycle with a horn, and a padded leather seat</em>&quot;. </span></span></p>
+            &nbsp;
+
+            <p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Please do <strong>NOT</strong> just say a name like &quot;<em>chair</em>&quot; or &quot;<em>motorcycle</em>&quot; and misuse the uppercase. And for the purpose of clearness, please avoid describing the objects metaphorically, for instance, &ldquo;<em>this is a chair which looks like a giant teapot</em>&rdquo;. Also, please only describe the things you can see in this object and don&rsquo;t include information like the purpose of the object, e.g. &ldquo;<em>this is a table made for 6 people</em>&rdquo;. Additionally, please avoid describing any motions in the GIF, for instance, &quot;<em>this is a round table and it is rotating</em>&quot; or &quot;<em>this chair is moving.</em>&quot;</span></span></p>
+
+            <p>&nbsp;</p>
+
+            <p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Conclusively, when you&rsquo;re writing the description, please always think <strong>what your friend would describe the object to you</strong> so that you can find this object in the warehouse. The more details contained in the description, the easier you will find the object that your friend is looking for. Try to describe the object in more aspects such as shapes, colors, and materials.</span></span></p>
+            &nbsp;
+
+            <p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><span><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">The task would take you less than a minute to complete. </span></span></p>
+
+            <p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
+
+            <p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;"><strong><span style="font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Example:</span></strong></p>
+
+            <p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;">&nbsp;</p>
+
+            <div class="col-xs-6 image"><img alt="gif_url" class="img-responsive center-block" src="http://korhal.vc.in.tum.de/ShapeNetv2_GIF/03001627/1a8bbf2994788e2743e99e0cae970928.gif" style="width: 400px; height: 400px;" /></div>
+
+            <div class="col-xs-6 form-group"><b>Category: </b>chair</div>
+
+            <div class="col-xs-6 form-group"><label for="WritingTexts">Please write the description below:</label><br />
+            <textarea class="form-control" cols="250" id="WritingTexts" name="description" placeholder="this is a brown wooden chair with no armrest and four legs" rows="3"></textarea></div>
+
+            <div>&nbsp;</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='container-fluid'>
+      <div class='row'>
+        <div class='col-xs-12 text-center'>
+          <div id='image-container'>
+          </div>
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-xs-4 col-xs-offset-4'>
+          <textarea id='text-area' class='form-control tb-margin' disabled></textarea>
+        </div>
+        <div class='col-xs-4 col-xs-offset-4 text-center' id='button-div'>
+          <button id='prev-btn' class='btn btn-lg btn-primary' disabled>Back</button>
+          <span id='counter'>
+            <span class='counter-top'></span> / <span class='counter-bottom'></span>
+          </span>
+          <button id='next-btn' class='btn btn-lg btn-primary' disabled>Next</button>
+        </div>
+      </div>
+    </div>
+
+    {% include "hit_templates/simpleamt.html" %}
+
+    <script>
+      $(function() {
+
+        // Define some default input.
+        var DEFAULT_INPUT = [
+          'http://korhal.vc.in.tum.de/ShapeNetv2_GIF/03001627/1a6f615e8b1b5ae4dbbc9440457e303e.gif',
+          'http://korhal.vc.in.tum.de/ShapeNetv2_GIF/02818832/1aa55867200ea789465e08d496c0420f.gif',
+        ];
+
+        var input = null;
+
+        // Descriptions of images, parallel to input.
+        var descriptions = [];
+
+        // Some variables to track state of the HIT.
+        var idx = 0;
+        var enabled = false;
+
+        function main() {
+          // If this is a HIT on AMT, then replace the default input with the real input.
+          input = simpleamt.getInput(DEFAULT_INPUT);
+
+          // Enable the UI if the HIT is not in preview mode.
+          if (!simpleamt.isPreview()) {
+            enable_hit();
+          }
+
+          // Set up the descriptions.
+          _.each(input, function() { descriptions.push(''); });
+
+          // Preload all images
+          var imgs = [];
+          _.each(input, function(img_url) {
+            var img = new Image();
+            img.onload = function() { console.log('loaded image from ' + img_url); };
+            img.src = img_url;
+          });
+
+          render();
+          addListeners();
+        }
+
+
+        // Use the current index to update the image and description
+        function render() {
+          
+          // Set up the image
+          $('#image-container').empty();
+          $('<img>').attr('src', input[idx]).appendTo($('#image-container'));
+
+          // Set up the text area
+          $('#text-area').val(descriptions[idx]);
+
+          // Refresh the counter
+          $('.counter-top').text(idx + 1);
+          $('.counter-bottom').text(input.length);
+
+          // If the UI is enabled, enable or disable the buttons depending on
+          // the index.
+          if (enabled) {
+            var prev_btn = $('#prev-btn');
+            var next_btn = $('#next-btn');
+            var submit_btn = $('#submit-btn');
+            prev_btn.prop('disabled', true);
+            next_btn.prop('disabled', true);
+            submit_btn.prop('disabled', true);
+            if (idx > 0) {
+              prev_btn.prop('disabled', false);
+            }
+            if (idx < input.length - 1) {
+              next_btn.prop('disabled', false);
+            }
+            if (idx = input.length - 1) {
+              submit_btn.prop('disabled', false);
+            }
+          }
+        }
+
+        function addListeners(){
+          $(".panel-heading").on("click", function(){
+            $("#instructionBody").toggleClass("hidden");
+          });
+        }
+
+        // Update the index, and save the text in the text area.
+        function set_idx(new_idx) {
+          if (new_idx < 0 || new_idx >= input.length) return;
+          descriptions[idx] = $('#text-area').val();
+
+          idx = new_idx;
+          render();
+        }
+
+        // Enable the UI.
+        function enable_hit() {
+          enabled = true;
+
+          // Enable components
+          $('#next-btn').click(function() { set_idx(idx + 1) });
+          $('#prev-btn').click(function() { set_idx(idx - 1) });
+          $('#text-area').prop('disabled', false);
+          $('#submit-btn').prop('disabled', false);
+
+          // Set up submit handler.
+          simpleamt.setupSubmit();
+          $('#submit-btn').click(function() {
+            descriptions[idx] = $('#text-area').val();
+            if (_.any(descriptions, function(d) { return d.length < 5; })) {
+              alert('Descriptions not long enough. Correct before submitting.');
+              return false;
+            }
+            var output = _.map(_.zip(input, descriptions), function(x) {
+              return {'image_url': x[0], 'description': x[1]};
+            });
+            simpleamt.setOutput(output);
+          });
+        }
+
+        main();
+      });
+    </script>
+  </body>
+</html>
