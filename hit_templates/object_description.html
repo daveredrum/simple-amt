@@ -97,13 +97,19 @@
 
     <div class='container-fluid'>
       <div class='row'>
-        <div class='col-xs-12 text-center'>
+        <div class='col-xs-4 col-xs-offset-4 text-center'>
           <div id='image-container'>
+          </div>
+        </div>
+        <div class='col-xs-4 col-xs-offset-4'>
+          <div id='category-container'>
+            <br /><b>Category: </b><span id="category"></span>
           </div>
         </div>
       </div>
       <div class='row'>
         <div class='col-xs-4 col-xs-offset-4'>
+          <label for="text-area">Please write the description below:</label>
           <textarea id='text-area' class='form-control tb-margin' disabled></textarea>
         </div>
         <div class='col-xs-4 col-xs-offset-4 text-center' id='button-div'>
@@ -157,7 +163,10 @@
           });
 
           render();
-          addListeners();
+
+          $(".panel-heading").on("click", function(){
+            $("#instructionBody").toggleClass("hidden");
+          });
         }
 
 
@@ -166,7 +175,10 @@
           
           // Set up the image
           $('#image-container').empty();
-          $('<img>').attr('src', input[idx]).appendTo($('#image-container'));
+          $('<img>').attr('src', input[idx][0]).appendTo($('#image-container'));
+
+          // Set up the category
+          document.getElementById("category").innerHTML=input[idx][1];
 
           // Set up the text area
           $('#text-area').val(descriptions[idx]);
@@ -180,26 +192,15 @@
           if (enabled) {
             var prev_btn = $('#prev-btn');
             var next_btn = $('#next-btn');
-            var submit_btn = $('#submit-btn');
             prev_btn.prop('disabled', true);
             next_btn.prop('disabled', true);
-            submit_btn.prop('disabled', true);
             if (idx > 0) {
               prev_btn.prop('disabled', false);
             }
             if (idx < input.length - 1) {
               next_btn.prop('disabled', false);
             }
-            if (idx = input.length - 1) {
-              submit_btn.prop('disabled', false);
-            }
           }
-        }
-
-        function addListeners(){
-          $(".panel-heading").on("click", function(){
-            $("#instructionBody").toggleClass("hidden");
-          });
         }
 
         // Update the index, and save the text in the text area.
@@ -218,6 +219,7 @@
           // Enable components
           $('#next-btn').click(function() { set_idx(idx + 1) });
           $('#prev-btn').click(function() { set_idx(idx - 1) });
+          
           $('#text-area').prop('disabled', false);
           $('#submit-btn').prop('disabled', false);
 

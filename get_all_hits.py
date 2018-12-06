@@ -29,4 +29,4 @@ if __name__ == '__main__':
   args = parser.parse_args()
   mtc = simpleamt.get_mturk_connection_from_args(args)
   hits = get_all_reviewable_hits(mtc)
-  print (len(hits))
+  print(len(hits))
