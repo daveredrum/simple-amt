@@ -1,6 +1,6 @@
 <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" integrity="sha384-IS73LIqjtYesmURkDE9MXKbXqYA8rvKEp/ghicjem7Vc3mGRdQRptJSz60tvrB6+" rel="stylesheet" />
 <meta content="width=device-width,initial-scale=1" name="viewport" />
-<section class="container" id="TranscriptionFromAnImage"><!-- Instructions -->
+<section class="container" id="TranscriptionFromAnImage" style="margin: auto"><!-- Instructions -->
 <div class="row">
 <div class="col-xs-10 col-md-10">
 <div class="panel panel-primary"><!-- WARNING: the ids "collapseTrigger" and "instructionBody" are being used to enable expand/collapse feature --><a class="panel-heading" href="javascript:void(0);" id="collapseTrigger"><strong>Object Description Instructions</strong> </a>
@@ -51,7 +51,7 @@
 <!-- End Instructions --><!-- Image Transcription Layout -->
 
 <div class="row" id="workContent">
-<div class="col-xs-10 col-md-10" id="content_1" style="display: None">
+<div id="content_1" style="display: None">
 <div class="col-xs-6 col-sm-6 image"><img class="img-responsive center-block" src="${gif_url_1}" style="width: 400px; height: 400px;" /></div>
 
 <div class="col-xs-6 col-sm-6"><b>Category: </b>${tag_1}</div>
@@ -59,7 +59,7 @@
 <div class="col-xs-6 col-sm-6"><label for="WritingTexts">Please write the description below:</label><textarea class="form-control" cols="250" id="WritingTexts_1" name="description_1" required="" rows="3"></textarea></div>
 </div>
 
-<div class="col-xs-10 col-md-10" id="content_2" style="display: None">
+<div id="content_2" style="display: None">
 <div class="col-xs-6 col-sm-6 image"><img class="img-responsive center-block" src="${gif_url_2}" style="width: 400px; height: 400px;" /></div>
 
 <div class="col-xs-6 col-sm-6"><b>Category: </b>${tag_2}</div>
@@ -67,7 +67,7 @@
 <div class="col-xs-6 col-sm-6"><label for="WritingTexts">Please write the description below:</label><textarea class="form-control" cols="250" id="WritingTexts_2" name="description_2" required="" rows="3"></textarea></div>
 </div>
 
-<div class="col-xs-10 col-md-10" id="content_3" style="display: None">
+<div id="content_3" style="display: None">
 <div class="col-xs-6 col-sm-6 image"><img class="img-responsive center-block" src="${gif_url_3}" style="width: 400px; height: 400px;" /></div>
 
 <div class="col-xs-6 col-sm-6"><b>Category: </b>${tag_3}</div>
@@ -75,7 +75,7 @@
 <div class="col-xs-6 col-sm-6"><label for="WritingTexts">Please write the description below:</label><textarea class="form-control" cols="250" id="WritingTexts_3" name="description_3" required="" rows="3"></textarea></div>
 </div>
 
-<div class="col-xs-10 col-md-10" id="content_4" style="display: None">
+<div id="content_4" style="display: None">
 <div class="col-xs-6 col-sm-6 image"><img class="img-responsive center-block" src="${gif_url_4}" style="width: 400px; height: 400px;" /></div>
 
 <div class="col-xs-6 col-sm-6"><b>Category: </b>${tag_4}</div>
@@ -83,15 +83,17 @@
 <div class="col-xs-6 col-sm-6"><label for="WritingTexts">Please write the description below:</label><textarea class="form-control" cols="250" id="WritingTexts_4" name="description_4" required="" rows="3"></textarea></div>
 </div>
 
-<div class="col-xs-10 col-md-10" id="content_5" style="display: None">
+<div id="content_5" style="display: None">
 <div class="col-xs-6 col-sm-6 image"><img class="img-responsive center-block" src="${gif_url_5}" style="width: 400px; height: 400px;" /></div>
 
 <div class="col-xs-6 col-sm-6"><b>Category: </b>${tag_5}</div>
 
 <div class="col-xs-6 col-sm-6"><label for="WritingTexts">Please write the description below:</label><textarea class="form-control" cols="250" id="WritingTexts_5" name="description_5" required="" rows="3"></textarea></div>
 </div>
+</div>
 
-<div class="col-xs-10 col-md-10 text-center" id="button-div">
+<div class="row" id="workContent">
+<div class="text-center" id="button-div">
 <button class="btn btn-lg btn-primary" disabled="disabled" id="prev-btn">Back</button>
 <span id="counter"><span class="counter-top">1</span> / <span class="counter-bottom">5</span> </span>
 <button class="btn btn-lg btn-primary" disabled="disabled" id="next-btn">Next</button>
@@ -123,6 +125,10 @@ margin-left: 25%;
 }
 .panel-primary {
 border-color: #428bca;
+}
+.container-center {
+    margin: auto;
+    width: 85%%;
 }
 </style>
 <script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" integrity="sha384-s1ITto93iSMDxlp/79qhWHi+LsIi9Gx6yL+cOKDuymvihkfol83TYbLbOw+W/wv4" crossorigin="anonymous"></script><script>
