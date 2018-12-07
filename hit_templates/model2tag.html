@@ -1,0 +1,219 @@
+<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" integrity="sha384-IS73LIqjtYesmURkDE9MXKbXqYA8rvKEp/ghicjem7Vc3mGRdQRptJSz60tvrB6+" rel="stylesheet" />
+<meta content="width=device-width,initial-scale=1" name="viewport" />
+<section class="container" id="TaggingOfAnImage" style="margin: auto;">
+<div class="row" style="margin: auto; width: 80%">
+<div class="panel panel-primary"><!-- WARNING: the ids "collapseTrigger" and "instructionBody" are being used to enable expand/collapse feature --><a class="panel-heading" href="javascript:void(0);" id="collapseTrigger"><strong>Object Tagging Instructions</strong> </a>
+<div class="panel-body" id="instructionBody">
+<p><span style="color: rgb(0, 0, 0); font-family: Arial; font-size: 14.6667px; white-space: pre-wrap;">You will see 5 images of rotating objects&nbsp;that allow you to see the objects in different views. </span></p>
+
+<p><span style="color: rgb(0, 0, 0); font-family: Arial; font-size: 14.6667px; white-space: pre-wrap;">Please give tags for the objects in the aspects of categories, colors, shapes, and materials. If you have multiple tags for one aspect, please <strong>separate the tags with commas and more tags are encouraged </strong>(means you can get a bonus :)). Note that the tags must meet the following criteria:</span></p>
+
+<ol dir="ltr">
+	<li style="list-style-type: decimal; font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="white-space: pre-wrap;">Each tag must be a single word</span></li>
+	<li style="list-style-type: decimal; font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="color: rgb(0, 0, 0); font-family: Arial; font-size: 14.6667px; white-space: pre-wrap;">Each</span><span style="white-space: pre-wrap;"> tag cannot be longer than 25 characters</span></li>
+	<li style="list-style-type: decimal; font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="color: rgb(0, 0, 0); font-family: Arial; font-size: 14.6667px; white-space: pre-wrap;">Each</span><span style="white-space: pre-wrap;"> tag must match the corresponding aspect</span></li>
+</ol>
+
+<p style="list-style-type: decimal; font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="white-space: pre-wrap;">​​</span></p>
+
+<p style="list-style-type: decimal; font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="white-space: pre-wrap;">Example:</span></p>
+&nbsp;
+
+<div class="col-xs-6 col-sm-6 image"><img src="http://korhal.vc.in.tum.de/ShapeNetv2_GIF/03001627/1b80175cc081f3e44e4975e87c20ce53.gif" style="width: 400px; height: 400px;" /></div>
+
+<div class="col-xs-6 col-sm-6 fields">
+<div class="form-group"><label>Category:</label>
+
+<div style="border: 1px solid gray; border-radius: 5px; padding: 5px;">chair</div>
+</div>
+
+<div class="form-group"><label>Shape:</label>
+
+<div style="border: 1px solid gray; border-radius: 5px; padding: 5px;"><span>square </span></div>
+</div>
+
+<div class="form-group"><label>Color:</label>
+
+<div style="border: 1px solid gray; border-radius: 5px; padding: 5px;"><span>brown, silver </span></div>
+</div>
+
+<div class="form-group"><label>Material:</label>
+
+<div style="border: 1px solid gray; border-radius: 5px; padding: 5px;"><span>wooden, steel</span></div>
+</div>
+
+<p style="list-style-type: decimal; font-size: 11pt; font-family: Arial; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt;"><span style="white-space: pre-wrap;">​​</span></p>
+</div>
+</div>
+</div>
+<!-- End Instructions --><!-- Image Tagging Layout -->
+
+<div class="row" id="workContent" style="margin: auto;">
+<div id="content_1" style="display: none;">
+<div class="col-xs-6 col-sm-6 image"><img alt="gif_url_1" class="img-responsive center-block" src="${gif_url_1}" style="width: 400px; height: 400px;" /></div>
+
+<div class="col-xs-6 col-sm-6 fields">
+<div class="form-group"><label for="tag1">Category:</label> <input class="form-control" id="category_1" name="category_1" required="" size="30" type="text" /></div>
+
+<div class="form-group"><label for="tag2">Shape:</label> <input class="form-control" id="shape_1" name="shape_1" required="" size="30" type="text" /></div>
+
+<div class="form-group"><label for="tag3">Color:</label> <input class="form-control" id="color_1" name="color_1" required="" size="30" type="text" /></div>
+
+<div class="form-group"><label for="tag4">Material:</label> <input class="form-control" id="material_1" name="material_1" required="" size="30" type="text" /></div>
+</div>
+</div>
+
+<div id="content_2" style="display: none;">
+<div class="col-xs-6 col-sm-6 image"><img alt="gif_url_2" class="img-responsive center-block" src="${gif_url_2}" style="width: 400px; height: 400px;" /></div>
+
+<div class="col-xs-6 col-sm-6 fields">
+<div class="form-group"><label for="tag1">Category:</label> <input class="form-control" id="category_2" name="category_2" required="" size="30" type="text" /></div>
+
+<div class="form-group"><label for="tag2">Shape:</label> <input class="form-control" id="shape_2" name="shape_2" required="" size="30" type="text" /></div>
+
+<div class="form-group"><label for="tag3">Color:</label> <input class="form-control" id="color_2" name="color_2" required="" size="30" type="text" /></div>
+
+<div class="form-group"><label for="tag4">Material:</label> <input class="form-control" id="material_3" name="material_3" required="" size="30" type="text" /></div>
+</div>
+</div>
+
+<div id="content_3" style="display: none;">
+<div class="col-xs-6 col-sm-6 image"><img alt="gif_url_3" class="img-responsive center-block" src="${gif_url_3}" style="width: 400px; height: 400px;" /></div>
+
+<div class="col-xs-6 col-sm-6 fields">
+<div class="form-group"><label for="tag1">Category:</label> <input class="form-control" id="category_3" name="category_3" required="" size="30" type="text" /></div>
+
+<div class="form-group"><label for="tag2">Shape:</label> <input class="form-control" id="shape_3" name="shape_3" required="" size="30" type="text" /></div>
+
+<div class="form-group"><label for="tag3">Color:</label> <input class="form-control" id="color_3" name="color_3" required="" size="30" type="text" /></div>
+
+<div class="form-group"><label for="tag4">Material:</label> <input class="form-control" id="material_3" name="material_3" required="" size="30" type="text" /></div>
+</div>
+</div>
+
+<div id="content_4" style="display: none;">
+<div class="col-xs-6 col-sm-6 image"><img alt="gif_url_4" class="img-responsive center-block" src="${gif_url_4}" style="width: 400px; height: 400px;" /></div>
+
+<div class="col-xs-6 col-sm-6 fields">
+<div class="form-group"><label for="tag1">Category:</label> <input class="form-control" id="category_4" name="category_4" required="" size="30" type="text" /></div>
+
+<div class="form-group"><label for="tag2">Shape:</label> <input class="form-control" id="shape_4" name="shape_4" required="" size="30" type="text" /></div>
+
+<div class="form-group"><label for="tag3">Color:</label> <input class="form-control" id="color_4" name="color_4" required="" size="30" type="text" /></div>
+
+<div class="form-group"><label for="tag4">Material:</label> <input class="form-control" id="material_4" name="material_4" required="" size="30" type="text" /></div>
+</div>
+</div>
+
+<div id="content_5" style="display: none;">
+<div class="col-xs-6 col-sm-6 image"><img alt="gif_url_5" class="img-responsive center-block" src="${gif_url_5}" style="width: 400px; height: 400px;" /></div>
+
+<div class="col-xs-6 col-sm-6 fields">
+<div class="form-group"><label for="tag1">Category:</label> <input class="form-control" id="category_5" name="category_5" required="" size="30" type="text" /></div>
+
+<div class="form-group"><label for="tag2">Shape:</label> <input class="form-control" id="shape_5" name="shape_5" required="" size="30" type="text" /></div>
+
+<div class="form-group"><label for="tag3">Color:</label> <input class="form-control" id="color_5" name="color_5" required="" size="30" type="text" /></div>
+
+<div class="form-group"><label for="tag4">Material:</label> <input class="form-control" id="material_5" name="material_5" required="" size="30" type="text" /></div>
+</div>
+</div>
+</div>
+
+<div class="row" id="workContent">
+<div class="text-center" id="button-div"><button class="btn btn-lg btn-primary" disabled="disabled" id="prev-btn">Back</button><span id="counter"><span class="counter-top">1</span> / <span class="counter-bottom">5</span> </span><button class="btn btn-lg btn-primary" disabled="disabled" id="next-btn">Next</button></div>
+</div>
+</div>
+</section>
+<style type="text/css">#collapseTrigger{ color:#fff; display: block; text-decoration: none; } 
+    #submitButton{ white-space: normal;} 
+    .image{ margin-bottom: 15px; } 
+    .group-label{ display: block; } 
+    .radio-inline>label{ font-weight: normal; }
+    #text-area {
+    margin: 10px 0;
+    font-size: 24pt;
+    }
+    #button-div {
+    margin-bottom: 10px;
+    }
+    #counter {
+    margin: 0 10px;
+    font-size: 20pt;
+    font-weight: bold;
+    }
+    .panel-heading {
+    display: block;
+    }
+    .container {
+    margin-left: 25%;
+    }
+    .panel-primary {
+    border-color: #428bca;
+    }
+    .container-center {
+        margin: auto;
+        width: 85%%;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" integrity="sha384-s1ITto93iSMDxlp/79qhWHi+LsIi9Gx6yL+cOKDuymvihkfol83TYbLbOw+W/wv4" crossorigin="anonymous"></script><script>
+    $(function() {
+        $("#submitButton").removeClass("btn-primary")
+        $("#submitButton").addClass("btn-lg btn-success text-center")
+    
+        // toggle the instructions
+        var trigger = $("#collapseTrigger");
+        var content = $("#instructionBody");
+        trigger.on("click", function(){
+            var display = content.css("display");
+            if (display === "block") {
+                content.attr("style", "display:none");
+            }
+            else {
+                content.attr("style", "display:block");
+            }
+        });
+    
+        // display the workContent
+        var idx = 1;
+        $('.counter-top').text(idx);
+        $('.counter-bottom').text("5");
+        $("#content_1").attr("style", "display:block"); // display the first workContent
+        $("#submitButton").attr('disabled', 'disabled');
+    
+        var prev_btn = $('#prev-btn');
+        var next_btn = $('#next-btn');
+        next_btn.removeAttr("disabled");
+    
+        next_btn.click(function() { 
+            $("#content_" + idx).attr("style", "display:none");
+            idx = idx + 1; 
+            if (idx >= 5) {
+                idx = 5; 
+                next_btn.attr('disabled', 'disabled');
+                $("#submitButton").removeAttr("disabled");
+            }
+            if (idx === 2) {
+                prev_btn.removeAttr("disabled");
+            }
+            $('.counter-top').text(idx);
+            $("#content_" + idx).attr("style", "display:block");
+        });
+        prev_btn.click(function() {
+            $("#content_" + idx).attr("style", "display:none");
+            idx = idx - 1; 
+            if (idx <= 1) {
+                idx = 1;
+                prev_btn.attr('disabled', 'disabled');
+            }
+            if (idx === 4) {
+                next_btn.removeAttr("disabled");
+                $("#submitButton").attr('disabled', 'disabled');
+            }
+            $('.counter-top').text(idx);
+            $("#content_" + idx).attr("style", "display:block");
+        });
+    
+    });
+    
+    </script>
